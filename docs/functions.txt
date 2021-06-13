@@ -1,0 +1,13 @@
+regisztráció: az alkalmazásba be lehet regisztrálni, név, emailcím és jelszó megadásával
+bejelentkezés: az alkalmazásba be lehet jelentkezni egy meglévő felhasználói fiókkal
+kijelentkezés: az alkalmazásból ki lehet jelentkezni
+regisztráció módosítás: módosítani lehet a regisztrációs adatokat név, email, jelszó
+profil adatok kiegészításe: kép hozzáadása, rövid leírás magadról
+téma hozzáadása: új téma felvitele (cím, rövid leírás, szöveg, címke)
+téma módosítása: a szerző módosíthatja az általa felvitt témát (cím, rövid leírás, szöveg, címke)
+bejegyzés hozzáadása: megjegyzést, észrevételt lehet tenni a felvett témákhoz
+bejegyzés törlése: az általunk felvett megjegyzést, észrevételt törölhetjük
+téma kedvencnek jelölése: a számunkra érdekes témákat megjelölhetjük
+téma kedvencnek jelölés visszavonása: a számunkra korábban érdekesnek jelölt téma jelölését eltávolíthatjuk
+szerző követése: az általunk érdekesnek ítélt cikkeket szerzőt bejelölhetjük követésre
+szűrés címke alapján: a népszerű felcímkézett cikkek alapján szűrhetünk
