@@ -1,0 +1,2 @@
+A001,CON_TC02_Login, felület automatizázás, mert ismételt végrehajtást tartalmaz
+to be continued ... szerdára kész lesz
