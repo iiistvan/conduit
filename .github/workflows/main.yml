@@ -19,6 +19,35 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: "postgres:11"
+        container_name: "realworld_postgres"
+        ports:
+          - "54320:5432"
+        volumes:
+          - ./.docker/data:/docker-entrypoint-initdb.d
+        environment:
+          - POSTGRES_USER=user
+          - POSTGRES_PASSWORD=userpassword
+        networks:
+          - drash-app-network
+
+      drash:
+        container_name: realworld_drash
+        image: tjozsa/conduit
+        volumes:
+          - ./src:/var/www/src
+        working_dir: /var/www/src
+        ports:
+          - "1667:1667"
+        networks:
+          - drash-app-network
+
+    networks:
+      drash-app-network:
+        driver: bridge
+
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -39,7 +68,8 @@ jobs:
         run: pip install seleniumbase    
       - name: Install chromedriver
         run: |
-          seleniumbase install chromedriver    
+          seleniumbase install chromedriver
+          
       - name: Run Tests
         run: |
           selenium-side-runner -c "browserName=chrome goog:chromeOptions.args=[disable-infobars, headless]" ./selenium-tests/registration.side
