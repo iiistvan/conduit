@@ -1,2 +1,7 @@
-A001,CON_TC02_Login, felület automatizázás, mert ismételt végrehajtást tartalmaz
-to be continued ... szerda 12-re kész lesz...remélem
+A001,CON_TC02_Login, felület automatizálás, mert ismételt végrehajtást tartalmaz
+A002,CON_TC03_Logout, felület automatizálás, mert ismételt végrehajtást tartalmaz
+A001,CON_TC05_NewBlogPost, felület automatizálás, alapfunkció, regressziós teszt
+A001,CON_TC15_RegBadEmail, felület automatizálás, kiemelt jelentőség, regresszió teszt
+A001,CON_TC16_RegEmptyFields, felület automatizálás, kedvenc gyorstesztjeim egyike
+A001,CON_TC21_NewComment, felület automatizálás, alapfunkció, regressziós teszt
+# folyamatosan bővítem, esetleg cserélem ahogy lesz időm
