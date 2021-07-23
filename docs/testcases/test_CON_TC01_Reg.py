@@ -2,6 +2,8 @@
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import time
+import random
+import string
 
 
 def test_CON_TC01_Reg():
@@ -11,9 +13,18 @@ def test_CON_TC01_Reg():
     driver.get("http://localhost:1667")
 
     time.sleep(2)
+
+    # véletlen string generálás
+    def get_random_string(length):
+        # choose from all lowercase letter
+        letters = string.ascii_lowercase
+        result_str = ''.join(random.choice(letters) for i in range(length))
+        return result_str
+
     # testdata = [['tesztalany1', 'tesztalany1@ta.hu', 'Conduit003'], ['tesztalany12', 'tesztalany12@ta.hu', 'Conduit003'],
     #             ['t360iiistvan1', 't360iiistvan1@gmail.com', 'Conduit003']]
-    testdata = ['tesztalany196', 'tesztalany196@ta.hu', 'Conduit003']
+    uname = get_random_string(8)
+    testdata = [uname, (uname + '@example.com'), 'Conduit003']
     signup_head = driver.find_element_by_xpath('//*[@id="app"]//li[3]/a')
 
     # try:
