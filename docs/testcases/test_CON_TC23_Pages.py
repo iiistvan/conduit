@@ -32,3 +32,6 @@ def test_CON_TC23_Pages():
         time.sleep(2)
         articles = driver.find_elements_by_xpath('//div[@class="article-preview"]')
         print(f"{i + 1}.oldal bejegyzéseinek száma {len(articles)}")
+
+    driver.close()
+    driver.quit()

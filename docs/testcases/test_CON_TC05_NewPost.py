@@ -39,9 +39,9 @@ def test_CON_TC05_NewPost():
     # print(len(ph_i), len(input_items))
     for e, i in enumerate(input_items):
         assert i.get_attribute('placeholder') == ph_i[e]
-        print(f"A(z) {ph_i[e]} beviteli mező megjelenik.")
+        # print(f"A(z) {ph_i[e]} beviteli mező megjelenik.")
     assert driver.find_element_by_xpath('//form//textarea').get_attribute('placeholder') == ph_t[0]
-    print(f"A(z) {ph_t[0]} beviteli mező megjelenik.")
+    # print(f"A(z) {ph_t[0]} beviteli mező megjelenik.")
 
     # Step6: Cikk feltöltése adatokkal
     publish_btn = driver.find_element_by_xpath('//form/button')
@@ -60,3 +60,6 @@ def test_CON_TC05_NewPost():
     assert driver.find_element_by_xpath('//button/span').text == ' Delete Article'
     assert driver.find_element_by_xpath('//form/div/textarea[@placeholder="Write a comment..."]')
     assert driver.find_element_by_xpath('//form/div/button').text == 'Post Comment'
+
+    driver.close()
+    driver.quit()

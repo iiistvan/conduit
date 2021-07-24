@@ -42,3 +42,6 @@ def test_CON_TC22_Cookie():
 
     # Step3: Adatvédelmi nyilatkozat elfogadása
     driver.find_element_by_xpath('//div[@id="cookie-policy-panel"]//button[2]').click()
+
+    driver.close()
+    driver.quit()
