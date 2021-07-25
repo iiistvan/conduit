@@ -8,7 +8,7 @@ import string
 
 ts = 3
 
-def test_CON_TC101_Reg():
+def test_CON_TC01_Reg():
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
