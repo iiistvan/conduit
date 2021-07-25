@@ -36,11 +36,6 @@ jobs:
       run: sleep 45s
       shell: bash
 
-    - name: Test with pytest
-      run: |
-        pip install pytest
-        pytest ./docs/testcases
-
     - name: Collect docker logs
       uses: jwalton/gh-docker-logs@v1
       with:
@@ -54,7 +49,7 @@ jobs:
         
     - name: Test with pytest
       run: |
-        pytest --alluredir=allure-results
+        pytest ./docs/testcases --alluredir=allure-results
           
     - name: Get Allure history
       uses: actions/checkout@v2
