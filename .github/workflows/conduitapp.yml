@@ -37,7 +37,7 @@ jobs:
 
     - name: Test with pytest
       run: |
-        pytest
+        pytest ./docs/testcases
 
     - name: Collect docker logs
       uses: jwalton/gh-docker-logs@v1
