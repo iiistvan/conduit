@@ -8,44 +8,44 @@ on:
 
 jobs:
   build:
+  
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
 
-      - name: Set up Python 3.9.5
-        uses: actions/setup-node@v2
-        with:
-          python-version: 3.9.5
+    - name: Set up Python 3.9.5
+      uses: actions/setup-node@v2
+      with:
+        python-version: 3.9.5
 
-      - name: Install dependencies
-        run: |
-	  python -m pip install --upgrade pip
-          if [ -f ./requirements.txt ]; then pip install -r ./requirements.txt; fi
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: Install Chrome
-        run: |
-          sudo apt install google-chrome-stable
+    - name: Install Chrome
+      run: |
+        sudo apt install google-chrome-stable
 
-      - name: Start containers
-        run: docker-compose up -d
+    - name: Start containers
+      run: docker-compose up -d
 
-      - name: Sleep for 45 seconds
-        run: sleep 45s|
-        shell: bash
+    - name: Sleep for 45 seconds
+      run: sleep 45s|
+      shell: bash
 
-      - name: Test with pytest
-        run: |
-          pytest
+    - name: Test with pytest
+      run: |
+        pytest
 
-      - name: Collect docker logs
-        uses: jwalton/gh-docker-logs@v1
-        with:
-          dest: './logs'
+    - name: Collect docker logs
+      uses: jwalton/gh-docker-logs@v1
+      with:
+        dest: './logs'
 
-      - name: Archive execution artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: docker-logs
-          path: './logs'
-
+    - name: Archive execution artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: docker-logs
+        path: './logs'
