@@ -6,13 +6,15 @@ import random
 import string
 
 
+ts = 3
+
 def test_CON_TC101_Reg():
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
     driver.get("http://localhost:1667")
 
-    time.sleep(2)
+    time.sleep(ts)
 
     # véletlen string generálás
     def get_random_string(length):
@@ -55,13 +57,13 @@ def test_CON_TC101_Reg():
     text_uj = 'Your registration was successful!'
     for e, i in enumerate(input_items):
         i.send_keys(testdata[e])
-        time.sleep(1)
+        time.sleep(ts)
     signup_btn.click()
-    time.sleep(2)
+    time.sleep(ts)
     assert driver.find_element_by_xpath('//div[@class="swal-text"]').text == text_uj
     # print('Sikeres regisztráció!')
     driver.find_element_by_xpath('//div[@class="swal-button-container"]//button').click()
-    time.sleep(2)
+    time.sleep(ts)
     assert driver.find_element_by_xpath('//*[@id="app"]//li[4]/a').text == testdata[0]
     # print('Felhasználó bejelentkezve, fióknév megjelenik!')
 
