@@ -1,0 +1,5 @@
+1.oldal bejegyzéseinek száma 45
+2.oldal bejegyzéseinek száma 35
+3.oldal bejegyzéseinek száma 25
+4.oldal bejegyzéseinek száma 15
+5.oldal bejegyzéseinek száma 5

@@ -1,0 +1,3 @@
+[32mINFO    [0m WDM:logger.py:12 
+
+[32mINFO    [0m WDM:logger.py:12 ====== WebDriver manager ======

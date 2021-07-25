@@ -5,3 +5,7 @@ src/public/js/app.js
 src/node_modules
 src/deno_dir
 
+/manual/
+/venv/
+/venv2/
+/docs/testcases/out/
