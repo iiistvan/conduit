@@ -10,7 +10,7 @@ def test_CON_TC02_Login():
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
     driver.get("http://localhost:1667")
 
-    time.sleep(2)
+    time.sleep(30)
     testdata = ['tesztalany1', 'tesztalany1@ta.hu', 'Conduit003']
 
     # try:
