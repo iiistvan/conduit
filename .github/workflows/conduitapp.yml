@@ -31,12 +31,8 @@ jobs:
       run: docker-compose up -d
 
     - name: Sleep for 45 seconds
-      run: sleep 45s|
+      run: sleep 45s
       shell: bash
-
-    - name: Test with pytest
-      run: |
-        pytest
 
     - name: Collect docker logs
       uses: jwalton/gh-docker-logs@v1
@@ -49,3 +45,30 @@ jobs:
         name: docker-logs
         path: './logs'
 
+    - name: Test with pytest
+      run: |
+        pytest ./docs/testcases  --alluredir=allure-results
+
+    - name: Get Allure history
+      uses: actions/checkout@v2
+      if: always()
+      continue-on-error: true
+      with:
+        ref: gh-pages
+        path: gh-pages
+
+    - name: Allure Report action from marketplace
+      uses: simple-elf/allure-report-action@master
+      if: always()
+      with:
+        allure_results: allure-results
+        allure_history: allure-history
+        keep_reports: 20
+
+    - name: Deploy report to Github Pages
+      if: always()
+      uses: peaceiris/actions-gh-pages@v2
+      env:
+        PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: allure-history
