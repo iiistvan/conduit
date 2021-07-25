@@ -14,7 +14,7 @@ def test_CON_TC01_Reg():
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
     driver.get("http://localhost:1667")
 
-    time.sleep(ts)
+    time.sleep(60)
 
     # véletlen string generálás
     def get_random_string(length):
