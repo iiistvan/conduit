@@ -27,7 +27,7 @@ def test_CON_TC01_Reg():
     #             ['t360iiistvan1', 't360iiistvan1@gmail.com', 'Conduit003']]
     uname = get_random_string(8)
     testdata = [uname, (uname + '@example.com'), 'Conduit003']
-    signup_head = driver.find_element_by_xpath('//ul/li[3]/a') # a régi: '//*[@id="app"]//li[3]/a'
+    signup_head = driver.find_element_by_xpath('//a[@href="#/register"]') # a régi: '//*[@id="app"]//li[3]/a'
 
     # try:
     # Step1: Homepage megjelenik
