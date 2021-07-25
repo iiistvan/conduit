@@ -6,7 +6,7 @@ import random
 import string
 
 
-def test_CON_TC01_Reg():
+def test_CON_TC101_Reg():
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
@@ -57,7 +57,7 @@ def test_CON_TC01_Reg():
         i.send_keys(testdata[e])
         time.sleep(1)
     signup_btn.click()
-    time.sleep(1)
+    time.sleep(2)
     assert driver.find_element_by_xpath('//div[@class="swal-text"]').text == text_uj
     # print('Sikeres regisztráció!')
     driver.find_element_by_xpath('//div[@class="swal-button-container"]//button').click()
