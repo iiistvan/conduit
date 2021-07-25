@@ -1,0 +1,73 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]//li[3]/a\"}\n  (Session info: headless chrome=91.0.4472.164)",
+      "children" : [ {
+        "name" : "test_CON_TC01_Reg",
+        "uid" : "41c4f4d82511169",
+        "parentUid" : "df5f8be3ed6494e4f60a4c22609616f9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627238677236,
+          "stop" : 1627238744698,
+          "duration" : 67462
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "df5f8be3ed6494e4f60a4c22609616f9"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]//li[4]/a\"}\n  (Session info: headless chrome=91.0.4472.164)",
+      "children" : [ {
+        "name" : "test_CON_TC02_Login",
+        "uid" : "c5a7b5d668088c4f",
+        "parentUid" : "2b073fc94c49457d92f0047c5e242508",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627238744759,
+          "stop" : 1627238779810,
+          "duration" : 35051
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_CON_TC03_Logout",
+        "uid" : "cac3b11c9ea38410",
+        "parentUid" : "2b073fc94c49457d92f0047c5e242508",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627238779843,
+          "stop" : 1627238785699,
+          "duration" : 5856
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2b073fc94c49457d92f0047c5e242508"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href=\"https://cookiesandyou.com/\" target=\"_blank\">...</a> is not clickable at point (565, 542). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=91.0.4472.164)",
+      "children" : [ {
+        "name" : "test_CON_TC22_Cookie",
+        "uid" : "4d6346e53158ccc3",
+        "parentUid" : "39ce4db5fd2c69bff59cc632d5dc78ed",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627238799211,
+          "stop" : 1627238807152,
+          "duration" : 7941
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "39ce4db5fd2c69bff59cc632d5dc78ed"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
