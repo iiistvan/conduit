@@ -11,7 +11,7 @@ def test_CON_TC03_Logout():
     driver.get("http://localhost:1667")
 
     # Step0: Előfeltétel
-    testdata = ['tesztalany1', 'tesztalany1@ta.hu', 'Conduit003']
+    testdata = ['testuser1', 'testuser1@example.com', 'Abcd123$']
     signin_head = driver.find_element_by_xpath('//a[@href="#/login"]')
     signin_head.click()
     input_items = driver.find_elements_by_xpath('//form//input')
