@@ -1,0 +1,138 @@
+{
+  "uid" : "9eb41b0f9f2f1d03",
+  "name" : "test_CON_TC24_DataList",
+  "fullName" : "docs.testcases.test_CON_TC24_DataList#test_CON_TC24_DataList",
+  "historyId" : "edb562b904ceb47521b5a056c0bd4a9a",
+  "time" : {
+    "start" : 1627234910592,
+    "stop" : 1627234917532,
+    "duration" : 6940
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ff8e72d2d9268f7",
+      "name" : "log",
+      "source" : "ff8e72d2d9268f7.txt",
+      "type" : "text/plain",
+      "size" : 344
+    }, {
+      "uid" : "b0ca4965c672ff3c",
+      "name" : "stdout",
+      "source" : "b0ca4965c672ff3c.txt",
+      "type" : "text/plain",
+      "size" : 108
+    }, {
+      "uid" : "4c434fc6527b3c7d",
+      "name" : "stderr",
+      "source" : "4c434fc6527b3c7d.txt",
+      "type" : "text/plain",
+      "size" : 215
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "docs.testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_CON_TC24_DataList"
+  }, {
+    "name" : "host",
+    "value" : "fv-az82-764"
+  }, {
+    "name" : "thread",
+    "value" : "4243-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "docs.testcases.test_CON_TC24_DataList"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "37f914ac8d889047",
+        "reportUrl" : "https://iiistvan.github.io/conduit/23//#testresult/37f914ac8d889047",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627234385000,
+          "stop" : 1627234392091,
+          "duration" : 7091
+        }
+      }, {
+        "uid" : "ee17e72be41b7c25",
+        "reportUrl" : "https://iiistvan.github.io/conduit/22//#testresult/ee17e72be41b7c25",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627234021385,
+          "stop" : 1627234027252,
+          "duration" : 5867
+        }
+      }, {
+        "uid" : "66f31f2b30cf215d",
+        "reportUrl" : "https://iiistvan.github.io/conduit/21//#testresult/66f31f2b30cf215d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627233298432,
+          "stop" : 1627233305989,
+          "duration" : 7557
+        }
+      }, {
+        "uid" : "96c1d5262b5fd239",
+        "reportUrl" : "https://iiistvan.github.io/conduit/20//#testresult/96c1d5262b5fd239",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href=\"#/login\"]\"}\n  (Session info: headless chrome=91.0.4472.164)",
+        "time" : {
+          "start" : 1627232890570,
+          "stop" : 1627232892035,
+          "duration" : 1465
+        }
+      }, {
+        "uid" : "6ee7f94ab4ba9cd0",
+        "reportUrl" : "https://iiistvan.github.io/conduit/18//#testresult/6ee7f94ab4ba9cd0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627230414383,
+          "stop" : 1627230421445,
+          "duration" : 7062
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "9eb41b0f9f2f1d03.json",
+  "parameterValues" : [ ]
+}
