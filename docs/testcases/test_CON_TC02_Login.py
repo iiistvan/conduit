@@ -42,7 +42,7 @@ def test_CON_TC02_Login():
         i.send_keys(testdata[e + 1])
         time.sleep(1)
     signin_btn.click()
-    time.sleep(1)
+    time.sleep(2)
     assert driver.find_element_by_xpath('//*[@id="app"]//li[4]/a').text == testdata[0]
     # print('Felhasználó bejelentkezve, fióknév megjelenik!')
 
