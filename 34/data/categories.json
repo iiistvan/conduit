@@ -1,0 +1,129 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href=\"#/register\"]\"}\n  (Session info: headless chrome=91.0.4472.164)",
+      "children" : [ {
+        "name" : "test_CON_TC01_Reg",
+        "uid" : "d209c34a244925ff",
+        "parentUid" : "2ecc4c9a618554725e9d338948eb876a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627405562905,
+          "stop" : 1627405572888,
+          "duration" : 9983
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2ecc4c9a618554725e9d338948eb876a"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"h1\"}\n  (Session info: headless chrome=91.0.4472.164)",
+      "children" : [ {
+        "name" : "test_CON_TC02_Login",
+        "uid" : "f6abf824c39b0c9b",
+        "parentUid" : "04bc660cc850f140867a135f65b81b62",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627405573030,
+          "stop" : 1627405574805,
+          "duration" : 1775
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "04bc660cc850f140867a135f65b81b62"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href=\"#/login\"]\"}\n  (Session info: headless chrome=91.0.4472.164)",
+      "children" : [ {
+        "name" : "test_CON_TC03_Logout",
+        "uid" : "7263fd699a4d0231",
+        "parentUid" : "ca3a3611a82c5431cc7a70005682104e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627405574864,
+          "stop" : 1627405576589,
+          "duration" : 1725
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_CON_TC05_NewPost",
+        "uid" : "29e8196de484481b",
+        "parentUid" : "ca3a3611a82c5431cc7a70005682104e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627405576637,
+          "stop" : 1627405578367,
+          "duration" : 1730
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_CON_TC22_Cookie",
+        "uid" : "ed574ed79dd9d4bb",
+        "parentUid" : "ca3a3611a82c5431cc7a70005682104e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627405578456,
+          "stop" : 1627405580189,
+          "duration" : 1733
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_CON_TC23_Pages",
+        "uid" : "b8a378d7a300d89a",
+        "parentUid" : "ca3a3611a82c5431cc7a70005682104e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627405580254,
+          "stop" : 1627405582128,
+          "duration" : 1874
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_CON_TC24_DataList",
+        "uid" : "9e7edaf19377f1d4",
+        "parentUid" : "ca3a3611a82c5431cc7a70005682104e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627405582217,
+          "stop" : 1627405584009,
+          "duration" : 1792
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ca3a3611a82c5431cc7a70005682104e"
+    }, {
+      "name" : "NameError: name 'tts' is not defined",
+      "children" : [ {
+        "name" : "test_CON_TC26_DataList",
+        "uid" : "fdcc0d160f2403e8",
+        "parentUid" : "ad50fe47b78b45e58392c0edda2c4f74",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627405584087,
+          "stop" : 1627405601439,
+          "duration" : 17352
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ad50fe47b78b45e58392c0edda2c4f74"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
