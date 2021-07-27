@@ -12,7 +12,7 @@ def test_CON_TC02_Login():
     driver.get("http://localhost:1667")
 
     def ts():
-        time.sleep(3)
+        time.sleep(5)
 
     testdata = ['testuser1', 'testuser1@example.com', 'Abcd123$']
 

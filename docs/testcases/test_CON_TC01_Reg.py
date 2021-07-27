@@ -14,7 +14,7 @@ def test_CON_TC01_Reg():
     driver.get("http://localhost:1667")
 
     def ts():
-        time.sleep(3)
+        time.sleep(5)
 
     # véletlen string generálás
     def get_random_string(length):
