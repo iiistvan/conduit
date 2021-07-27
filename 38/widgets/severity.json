@@ -1,0 +1,91 @@
+[ {
+  "uid" : "ca02698dff410f46",
+  "name" : "test_CON_TC01_Reg",
+  "time" : {
+    "start" : 1627407802070,
+    "stop" : 1627407829856,
+    "duration" : 27786
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7a5768ed85f85c7",
+  "name" : "test_CON_TC24_DataList",
+  "time" : {
+    "start" : 1627407909392,
+    "stop" : 1627407920200,
+    "duration" : 10808
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8a60ea720a82b14f",
+  "name" : "test_CON_TC28_ManyArticle",
+  "time" : {
+    "start" : 1627407943156,
+    "stop" : 1627408065377,
+    "duration" : 122221
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eaba068c74495be8",
+  "name" : "test_CON_TC03_Logout",
+  "time" : {
+    "start" : 1627407846670,
+    "stop" : 1627407856455,
+    "duration" : 9785
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e530c0e0b2a2504b",
+  "name" : "test_CON_TC22_Cookie",
+  "time" : {
+    "start" : 1627407882652,
+    "stop" : 1627407898653,
+    "duration" : 16001
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a85fe44cb6e48771",
+  "name" : "test_CON_TC02_Login",
+  "time" : {
+    "start" : 1627407829858,
+    "stop" : 1627407846667,
+    "duration" : 16809
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "192c86f4e34d03d1",
+  "name" : "test_CON_TC05_NewPost",
+  "time" : {
+    "start" : 1627407856458,
+    "stop" : 1627407882649,
+    "duration" : 26191
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "59a6ad86895c95e7",
+  "name" : "test_CON_TC23_Pages",
+  "time" : {
+    "start" : 1627407898657,
+    "stop" : 1627407909390,
+    "duration" : 10733
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d81026448206fc0a",
+  "name" : "test_CON_TC26_DataList",
+  "time" : {
+    "start" : 1627407920203,
+    "stop" : 1627407943153,
+    "duration" : 22950
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
