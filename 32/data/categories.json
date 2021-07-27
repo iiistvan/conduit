@@ -1,0 +1,116 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href=\"#/register\"]\"}\n  (Session info: headless chrome=91.0.4472.164)",
+      "children" : [ {
+        "name" : "test_CON_TC01_Reg",
+        "uid" : "70111f782d998ff1",
+        "parentUid" : "2ecc4c9a618554725e9d338948eb876a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627390181645,
+          "stop" : 1627390186432,
+          "duration" : 4787
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2ecc4c9a618554725e9d338948eb876a"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"h1\"}\n  (Session info: headless chrome=91.0.4472.164)",
+      "children" : [ {
+        "name" : "test_CON_TC02_Login",
+        "uid" : "e83d24011f03f3f5",
+        "parentUid" : "04bc660cc850f140867a135f65b81b62",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627390186491,
+          "stop" : 1627390190965,
+          "duration" : 4474
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "04bc660cc850f140867a135f65b81b62"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href=\"#/login\"]\"}\n  (Session info: headless chrome=91.0.4472.164)",
+      "children" : [ {
+        "name" : "test_CON_TC03_Logout",
+        "uid" : "e0342a0763b729c",
+        "parentUid" : "ca3a3611a82c5431cc7a70005682104e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627390191005,
+          "stop" : 1627390192540,
+          "duration" : 1535
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_CON_TC05_NewPost",
+        "uid" : "c06546b69c7d5c8f",
+        "parentUid" : "ca3a3611a82c5431cc7a70005682104e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627390192574,
+          "stop" : 1627390194056,
+          "duration" : 1482
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_CON_TC22_Cookie",
+        "uid" : "4864680290a1940",
+        "parentUid" : "ca3a3611a82c5431cc7a70005682104e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627390194089,
+          "stop" : 1627390195555,
+          "duration" : 1466
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_CON_TC23_Pages",
+        "uid" : "aa23de72d52a4d7",
+        "parentUid" : "ca3a3611a82c5431cc7a70005682104e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627390195588,
+          "stop" : 1627390197057,
+          "duration" : 1469
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ca3a3611a82c5431cc7a70005682104e"
+    }, {
+      "name" : "FileNotFoundError: [Errno 2] No such file or directory: 'c:\\\\T360\\\\PycharmProjects\\\\selenium-py-peldatar\\\\selenium2-homework\\\\ManyDataInput.csv'",
+      "children" : [ {
+        "name" : "test_CON_TC28_ManyArticle",
+        "uid" : "1fd818e97f405bbc",
+        "parentUid" : "d8a952f24fa689fa391d9a75356fc7d6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627390220597,
+          "stop" : 1627390227402,
+          "duration" : 6805
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d8a952f24fa689fa391d9a75356fc7d6"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
