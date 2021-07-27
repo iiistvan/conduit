@@ -11,6 +11,9 @@ def test_CON_TC23_Pages():
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
     driver.get("http://localhost:1667")
 
+    def ts():
+        time.sleep(3)
+
     # Step0: Előfeltétel
     testdata = ['tesztalany1', 'tesztalany1@ta.hu', 'Conduit003']
     signin_head = driver.find_element_by_xpath('//a[@href="#/login"]')
@@ -19,9 +22,9 @@ def test_CON_TC23_Pages():
     signin_btn = driver.find_element_by_xpath('//form/button')
     for e, i in enumerate(input_items):
         i.send_keys(testdata[e + 1])
-        time.sleep(1)
+        ts()
     signin_btn.click()
-    time.sleep(2)
+    ts()
 
     # Step1: Oldalszám elemek kigyűjtése
     pages = driver.find_elements_by_class_name('page-link')
@@ -29,7 +32,7 @@ def test_CON_TC23_Pages():
     # Step2: Oldalon belüli bejegyzések ellenőrzése
     for i in range(len(pages)):
         pages[i].click()
-        time.sleep(2)
+        ts()
         articles = driver.find_elements_by_xpath('//div[@class="article-preview"]')
         print(f"{i + 1}.oldal bejegyzéseinek száma {len(articles)}")
 

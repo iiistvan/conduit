@@ -10,6 +10,9 @@ def test_CON_TC24_DataList():
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
     driver.get("http://localhost:1667")
 
+    def ts():
+        time.sleep(3)
+
     # Step0: Előfeltétel, belépés beépített tesztadattal
     testdata = ['testuser1', 'testuser1@example.com', 'Abcd123$']
     signin_head = driver.find_element_by_xpath('//a[@href="#/login"]')
@@ -18,14 +21,14 @@ def test_CON_TC24_DataList():
     signin_btn = driver.find_element_by_xpath('//form/button')
     for e, i in enumerate(input_items):
         i.send_keys(testdata[e + 1])
-    time.sleep(1)
+    ts()
     signin_btn.click()
-    time.sleep(2)
+    ts()
 
     # Step1: Settings felület megnyitása
     settings_head = driver.find_element_by_xpath('//a[@href="#/settings"]')
     settings_head.click()
-    time.sleep(2)
+    ts()
 
     # Step2: Settings felület megnyitása
     list_items = driver.find_elements_by_xpath('//fieldset[@class="form-group"]')

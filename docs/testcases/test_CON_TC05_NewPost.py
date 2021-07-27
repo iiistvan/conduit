@@ -5,11 +5,16 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 
+
+
 def test_CON_TC05_NewPost():
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
     driver.get("http://localhost:1667")
+
+    def ts():
+        time.sleep(3)
 
     # Step0: Előfeltétel
     testdata = [['testuser1', 'testuser1@example.com', 'Abcd123$'], ['tesztalany2', 'tesztalany2@ta.hu', 'Conduit003']]
@@ -22,9 +27,9 @@ def test_CON_TC05_NewPost():
     signin_btn = driver.find_element_by_xpath('//form/button')
     for e, i in enumerate(input_items):
         i.send_keys(testdata[0][e + 1])
-        time.sleep(1)
+        ts()
     signin_btn.click()
-    time.sleep(2)
+    ts()
 
     # Step4: elérhető a New Article felirat
     newArt_head = driver.find_element_by_xpath('//*[@id="app"]//li[2]/a')
@@ -32,7 +37,7 @@ def test_CON_TC05_NewPost():
 
     # Step5: elérhető a New Article felirat
     newArt_head.click()
-    time.sleep(2)
+    ts()
     ph_i = ["Article Title", "What's this article about?", "Enter tags"]
     ph_t = ["Write your article (in markdown)"]
     input_items = driver.find_elements_by_xpath('//form//input')
@@ -47,10 +52,10 @@ def test_CON_TC05_NewPost():
     publish_btn = driver.find_element_by_xpath('//form/button')
     for e, i in enumerate(input_items):
         i.send_keys(new_article[e])
-        time.sleep(1)
+        ts()
     driver.find_element_by_xpath('//form//textarea').send_keys(new_art_szoveg)
     publish_btn.click()
-    time.sleep(2)
+    ts()
 
     # Step7: a felületen a title, a szerző, tag,  Edit és Delete gomb, valamint egy üres comment ablak és Post Comment gomb
     assert driver.find_element_by_xpath('//div[@class="banner"]//h1').text == new_article[0]

@@ -4,13 +4,16 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 
 
+
 def test_CON_TC02_Login():
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
     driver.get("http://localhost:1667")
 
-    time.sleep(3)
+    def ts():
+        time.sleep(3)
+
     testdata = ['testuser1', 'testuser1@example.com', 'Abcd123$']
 
     # try:
@@ -40,9 +43,9 @@ def test_CON_TC02_Login():
 
     for e, i in enumerate(input_items):
         i.send_keys(testdata[e + 1])
-        time.sleep(1)
+        ts()
     signin_btn.click()
-    time.sleep(2)
+    ts()
     assert driver.find_element_by_xpath('//*[@id="app"]//li[4]/a').text == testdata[0]
     # print('Felhasználó bejelentkezve, fióknév megjelenik!')
 
