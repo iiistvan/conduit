@@ -49,7 +49,7 @@ def test_CON_TC28_ManyArticle():
     # Step2: Cikk feltöltése adatokkal csv-ből
     input_items = driver.find_elements_by_xpath('//form//input')
     publish_btn = driver.find_element_by_xpath('//form/button')
-    # with open('c:\\T360\\PycharmProjects\\selenium-py-peldatar\\selenium2-homework\\ManyDataInput.csv', "r",
+    # with open('c:\\T360\\PycharmProjects\\selenium-py-peldatar\\selenium2-homework\\ManyDataInput.csv',
     with open('ManyDataInput.csv', "r", encoding='utf-8') as csvfile:
         csvreader = csv.reader(csvfile, delimiter=',')
         for row in csvreader:
