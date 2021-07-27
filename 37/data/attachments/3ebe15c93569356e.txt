@@ -1,0 +1,3 @@
+A(z) Username beviteli mező megjelenik.
+A(z) Email beviteli mező megjelenik.
+A(z) Password beviteli mező megjelenik.
