@@ -15,7 +15,7 @@ def test_CON_TC22_Cookie():
         time.sleep(3)
 
     # Step0: Előfeltétel
-    testdata = ['tesztalany1', 'tesztalany1@ta.hu', 'Conduit003']
+    testdata = ['testuser1', 'testuser1@example.com', 'Abcd123$']
     signin_head = driver.find_element_by_xpath('//a[@href="#/login"]')
     signin_head.click()
     input_items = driver.find_elements_by_xpath('//form//input')
@@ -41,7 +41,7 @@ def test_CON_TC22_Cookie():
     ts()
     driver.close()
     driver.switch_to.window(main_window)
-    tts()
+
 
     # Step3: Adatvédelmi nyilatkozat elfogadása
     driver.find_element_by_xpath('//div[@id="cookie-policy-panel"]//button[2]').click()

@@ -45,7 +45,6 @@ def test_CON_TC26_DataList():
     update_btn.click()
     ts()
     text_update = 'Update successful!'
-    tts()
     assert driver.find_element_by_xpath('//div[@class="swal-title"]').text == text_update
     ts()
     driver.find_element_by_xpath('//div[@class="swal-button-container"]//button').click()
