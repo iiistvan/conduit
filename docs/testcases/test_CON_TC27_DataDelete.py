@@ -1,19 +1,18 @@
-# CON_TC28_ManyArticle: Ismételt és sorozatos adatbevitel adatforrásból
+# CON_TC27_DataDelete: Adat vagy adatok törlése
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import time
-import csv
 
-
-
-def test_CON_TC28_ManyArticle():
+def test_CON_TC27_DataDelete():
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
     driver.get("http://localhost:1667")
 
+    # időzités röviden
     def ts():
         time.sleep(3)
+
 
     # a felvett cikkek meglétének ellenőrzése
     def check_art_item(art_title):
@@ -30,43 +29,57 @@ def test_CON_TC28_ManyArticle():
             art_input_items = driver.find_elements_by_class_name('article-preview')
             for ai in art_input_items:
                 if ai.find_element_by_tag_name('h1').text == art_title:
-                    return True
-        return False
+                    return ai
+        return ''
+
+    def del_item(del_item):
+        del_item.click()
+        ts()
+        del_art_btn = driver.find_element_by_xpath('//span/button')
+        ts()
+        del_art_btn.click()
+        ts()
 
 
-    # Step0: Előfeltétel, belépés
-    testdata = [['testuser1', 'testuser1@example.com', 'Abcd123$'], ]
+    # Step0: Előfeltétel, belépés beépített tesztadattal
+    testdata = ['testuser2', 'testuser2@example.com', 'Abcd123$']
     signin_head = driver.find_element_by_xpath('//a[@href="#/login"]')
     signin_head.click()
     input_items = driver.find_elements_by_xpath('//form//input')
     signin_btn = driver.find_element_by_xpath('//form/button')
+
+    new_article = ['TorlendoCim', 'Tema', 'Tag']
+    new_art_szoveg = ['07272 Ez egy új bejegyzés a vizsgamunkába, ezt fogom törölni később.']
+
     for e, i in enumerate(input_items):
-        i.send_keys(testdata[0][e + 1])
-        ts()
+        i.send_keys(testdata[e + 1])
+    ts()
     signin_btn.click()
     ts()
 
-    # Step1: New Article felirat
+    home_head = driver.find_element_by_xpath('//*[@id="app"]//li[1]/a')
     newArt_head = driver.find_element_by_xpath('//*[@id="app"]//li[2]/a')
     newArt_head.click()
     ts()
 
-    # Step2: Cikk feltöltése adatokkal csv-ből
+    # Step1: törlendő cikk létrehozása
     publish_btn = driver.find_element_by_xpath('//form/button')
-    with open('ManyDataInput.csv', "r", encoding='utf-8') as csvfile:
-        csvreader = csv.reader(csvfile, delimiter=',')
-        for row in csvreader:
-            input_items = driver.find_elements_by_xpath('//form//input')
-            for e, i in enumerate(input_items):
-                i.send_keys(row[e])
-                ts()
-            driver.find_element_by_xpath('//form//textarea').send_keys(row[-1])
-            publish_btn.click()
-            ts()
-            assert check_art_item(row[0])
-            newArt_head.click()
-            ts()
-    driver.find_element_by_xpath('//a[@href="#/"]').click()
+    input_items = driver.find_elements_by_xpath('//form//input')
+    for e, i in enumerate(input_items):
+        i.send_keys(new_article[e])
+        ts()
+    driver.find_element_by_xpath('//form//textarea').send_keys(new_art_szoveg)
+    publish_btn.click()
+    ts()
+    home_head.click()
+    ts()
+
+    # Step2: létrehozott cikk keresése, majd törlése
+    del_item(check_art_item(new_article[0]))
+    ts()
+
+    # Step3: törlés ellenőrzése
+    assert check_art_item(new_article[0]) == ''
 
     driver.close()
     driver.quit()
