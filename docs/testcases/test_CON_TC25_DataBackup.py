@@ -40,14 +40,16 @@ def test_CON_TC25_DataBackup():
         for pt in pop_tags:
             csvfile.write(f'{pt.text},{pt.get_attribute("href")}\n')
             # print(f'{pt.text},{pt.get_attribute("href")}')
+    ts()
 
     # Step2: Popular tags kigyűjtése, fájlból olvasás ellenőrzés
     with open('./docs/testcases/PopTagsExport.csv', "r", encoding='utf-8') as csvfile2:
         csvreader = csv.reader(csvfile2, delimiter=',')
         next(csvreader)
         for e, row in enumerate(csvreader):
-            assert row[0] == pop_tags[e][0]
-            assert row[1] == pop_tags[e][1]
+            pt = pop_tags[e]
+            assert row[0] == pt.text
+            assert row[1] == pt.get_attribute("href")
 
     # ablak lezárása, memória felszabadítása
     driver.close()
