@@ -1,26 +1,30 @@
 # CON_TC26_DataModify: Meglévő adat módosítás, felület automatizálás
+
+# a szükséges csomagok, modulok betöltése
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 
 
 def test_CON_TC26_DataList():
+    # webdriver konfiguráció, tesztelt oldal megnyitása
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
     driver.get("http://localhost:1667")
 
+    # tesztre vonatkozó egységes, központi időzítés
     def ts():
         time.sleep(3)
 
-    # Step0: Előfeltétel, belépés beépített tesztadattal
+    # Step0: Előfeltétel, tesztadatok, belépés létező felhasználóval
     testdata = ['testuser2', 'testuser2@example.com', 'Abcd123$']
     modified_testdata = ['testuser2', 'testuser2@example.com', 'Abcd123$', 'Short bio about testuser2']
+
     signin_head = driver.find_element_by_xpath('//a[@href="#/login"]')
     signin_head.click()
     input_items = driver.find_elements_by_xpath('//form//input')
     signin_btn = driver.find_element_by_xpath('//form/button')
-
     for e, i in enumerate(input_items):
         i.send_keys(testdata[e + 1])
     ts()
@@ -45,11 +49,14 @@ def test_CON_TC26_DataList():
     update_btn.click()
     ts()
     text_update = 'Update successful!'
+
+    # Step4: Módosított adatok vizsgálata
     assert driver.find_element_by_xpath('//div[@class="swal-title"]').text == text_update
     ts()
     driver.find_element_by_xpath('//div[@class="swal-button-container"]//button').click()
     ts()
     assert modified_testdata[3] == driver.find_element_by_xpath('//fieldset/textarea').get_attribute("value")
 
+    # ablak lezárása, memória felszabadítása
     driver.close()
     driver.quit()

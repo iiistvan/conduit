@@ -1,17 +1,20 @@
 # CON_TC28_ManyArticle: Ismételt és sorozatos adatbevitel adatforrásból
+
+# a szükséges csomagok, modulok betöltése
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 import csv
 
 
-
 def test_CON_TC28_ManyArticle():
+    # webdriver konfiguráció, tesztelt oldal megnyitása
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
     driver.get("http://localhost:1667")
 
+    # tesztre vonatkozó egységes, központi időzítés
     def ts():
         time.sleep(3)
 
@@ -36,6 +39,7 @@ def test_CON_TC28_ManyArticle():
 
     # Step0: Előfeltétel, belépés
     testdata = [['testuser1', 'testuser1@example.com', 'Abcd123$'], ]
+
     signin_head = driver.find_element_by_xpath('//a[@href="#/login"]')
     signin_head.click()
     input_items = driver.find_elements_by_xpath('//form//input')
@@ -68,5 +72,6 @@ def test_CON_TC28_ManyArticle():
             ts()
     driver.find_element_by_xpath('//a[@href="#/"]').click()
 
+    # ablak lezárása, memória felszabadítása
     driver.close()
     driver.quit()

@@ -1,4 +1,8 @@
 # CON_TC01_Reg: Regisztráció
+# generált jelszóval
+# manuális teszt alapján történő lépésekkel
+
+# a szükséges csomagok, modulok betöltése
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import time
@@ -6,13 +10,14 @@ import random
 import string
 
 
-
 def test_CON_TC01_Reg():
+    # webdriver konfiguráció, tesztelt oldal megnyitása
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
     driver.get("http://localhost:1667")
 
+    # tesztre vonatkozó egységes, központi időzítés
     def ts():
         time.sleep(5)
 
@@ -23,13 +28,11 @@ def test_CON_TC01_Reg():
         result_str = ''.join(random.choice(letters) for i in range(length))
         return result_str
 
-    # testdata = [['tesztalany1', 'tesztalany1@ta.hu', 'Conduit003'], ['tesztalany12', 'tesztalany12@ta.hu', 'Conduit003'],
-    #             ['t360iiistvan1', 't360iiistvan1@gmail.com', 'Conduit003']]
+    # Step0: felhasználói név, email cím előállítása
     uname = get_random_string(8)
     testdata = [uname, (uname + '@example.com'), 'Conduit003']
     signup_head = driver.find_element_by_xpath('//a[@href="#/register"]')  # a régi: '//*[@id="app"]//li[3]/a'
 
-    # try:
     # Step1: Homepage megjelenik
     assert driver.find_element_by_tag_name('h1').text == 'conduit'
     assert driver.find_element_by_xpath('//*[@class="banner"]//p').get_attribute(
@@ -67,5 +70,6 @@ def test_CON_TC01_Reg():
     assert driver.find_element_by_xpath('//*[@id="app"]//li[4]/a').text == testdata[0]
     # print('Felhasználó bejelentkezve, fióknév megjelenik!')
 
+    # ablak lezárása, memória felszabadítása
     driver.close()
     driver.quit()

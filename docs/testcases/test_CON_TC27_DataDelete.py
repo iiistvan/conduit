@@ -1,18 +1,21 @@
 # CON_TC27_DataDelete: Adat vagy adatok törlése
+
+# a szükséges csomagok, modulok betöltése
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 
+
 def test_CON_TC27_DataDelete():
+    # webdriver konfiguráció, tesztelt oldal megnyitása
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
     driver.get("http://localhost:1667")
 
-    # időzités röviden
+    # tesztre vonatkozó egységes, központi időzítés
     def ts():
         time.sleep(3)
-
 
     # a felvett cikkek meglétének ellenőrzése
     def check_art_item(art_title):
@@ -32,6 +35,7 @@ def test_CON_TC27_DataDelete():
                     return ai
         return ''
 
+    # az átadott elem törlése
     def del_item(del_item):
         del_item.click()
         ts()
@@ -40,17 +44,15 @@ def test_CON_TC27_DataDelete():
         del_art_btn.click()
         ts()
 
-
     # Step0: Előfeltétel, belépés beépített tesztadattal
     testdata = ['testuser2', 'testuser2@example.com', 'Abcd123$']
+    new_article = ['TorlendoCim', 'Tema', 'Tag']
+    new_art_szoveg = ['07272 Ez egy új bejegyzés a vizsgamunkába, ezt fogom törölni később.']
+
     signin_head = driver.find_element_by_xpath('//a[@href="#/login"]')
     signin_head.click()
     input_items = driver.find_elements_by_xpath('//form//input')
     signin_btn = driver.find_element_by_xpath('//form/button')
-
-    new_article = ['TorlendoCim', 'Tema', 'Tag']
-    new_art_szoveg = ['07272 Ez egy új bejegyzés a vizsgamunkába, ezt fogom törölni később.']
-
     for e, i in enumerate(input_items):
         i.send_keys(testdata[e + 1])
     ts()
@@ -81,5 +83,6 @@ def test_CON_TC27_DataDelete():
     # Step3: törlés ellenőrzése
     assert check_art_item(new_article[0]) == ''
 
+    # ablak lezárása, memória felszabadítása
     driver.close()
     driver.quit()
