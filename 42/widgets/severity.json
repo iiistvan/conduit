@@ -1,0 +1,11 @@
+[ {
+  "uid" : "9fdbd304a3b7fd71",
+  "name" : "test_CON_TC25_DataBackup",
+  "time" : {
+    "start" : 1627591986492,
+    "stop" : 1627592012700,
+    "duration" : 26208
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
