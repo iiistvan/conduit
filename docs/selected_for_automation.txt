@@ -1,21 +1,11 @@
 A001,CON_TC01_Reg, Regisztráció, felület automatizálás, vizsgakövetelmény
 A002,CON_TC02_Login, Bejelentkezés, felület automatizálás, vizsgakövetelmény
-A011,CON_TC03_Logout, Kijelentkezés, felület automatizálás, vizsgakövetelmény
-A006,CON_TC05_NewPost, Új adat bevitel, felület automatizálás, vizsgakövetelmény
 A003,CON_TC22_Cookie, Adatkezelési nyilatkozat, felület automatizálás, vizsgakövetelmény
-A005,CON_TC23_Pages, Több oldalas lista bejárása, felület automatizálás, vizsgakövetelmény
 A004,CON_TC24_DataList, Adatok listázása, felület automatizálás, vizsgakövetelmény
+A005,CON_TC23_Pages, Több oldalas lista bejárása, felület automatizálás, vizsgakövetelmény
+A006,CON_TC05_NewPost, Új adat bevitel, felület automatizálás, vizsgakövetelmény
+A007,CON_TC25_ManyArticle, Ismételt és sorozatos adatbevitel adatforrásból, felület automatizálás, vizsgakövetelmény
 A008,CON_TC26_DataModify, Meglévő adat módosítás, felület automatizálás, vizsgakövetelmény
-
-A007,CON_TC25_RepeatInput, Ismételt és sorozatos adatbevitel adatforrásból, felület automatizálás, vizsgakövetelmény
 A009,CON_TC27_DataDelete, Adat vagy adatok törlése, felület automatizálás, vizsgakövetelmény
-A010,CON_TC28_DataSave, Adatok lementése felületről
-
-
-
-
-
-# korábbi terv volt
-A015,CON_TC15_RegBadEmail, felület automatizálás, kiemelt jelentőség, regresszió teszt
-A016,CON_TC16_RegEmptyFields, felület automatizálás, kedvenc gyorstesztjeim egyike
-A007,CON_TC21_NewComment
+A010,CON_TC28_DataBackup, Adatok lementése felületről
+A011,CON_TC03_Logout, Kijelentkezés, felület automatizálás, vizsgakövetelmény
