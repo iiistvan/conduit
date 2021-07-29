@@ -1,0 +1,184 @@
+{
+  "uid" : "ae2225df86fc6b32",
+  "name" : "test_CON_TC28_ManyArticle",
+  "fullName" : "docs.testcases.test_CON_TC28_ManyArticle#test_CON_TC28_ManyArticle",
+  "historyId" : "cb6e0b9273f91050a4dc403c80fc92cb",
+  "time" : {
+    "start" : 1627590988086,
+    "stop" : 1627591111177,
+    "duration" : 123091
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "9592d7c6a44c86b3",
+      "name" : "log",
+      "source" : "9592d7c6a44c86b3.txt",
+      "type" : "text/plain",
+      "size" : 344
+    }, {
+      "uid" : "eebd0b70ce18a501",
+      "name" : "stdout",
+      "source" : "eebd0b70ce18a501.txt",
+      "type" : "text/plain",
+      "size" : 10
+    }, {
+      "uid" : "73eb6ac8e3ea6c2",
+      "name" : "stderr",
+      "source" : "73eb6ac8e3ea6c2.txt",
+      "type" : "text/plain",
+      "size" : 215
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "docs.testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_CON_TC28_ManyArticle"
+  }, {
+    "name" : "host",
+    "value" : "fv-az47-334"
+  }, {
+    "name" : "thread",
+    "value" : "3614-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "docs.testcases.test_CON_TC28_ManyArticle"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 9,
+        "unknown" : 0,
+        "total" : 11
+      },
+      "items" : [ {
+        "uid" : "5c6b8866e2ea67ac",
+        "reportUrl" : "https://iiistvan.github.io/conduit/40//#testresult/5c6b8866e2ea67ac",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627421589246,
+          "stop" : 1627421713435,
+          "duration" : 124189
+        }
+      }, {
+        "uid" : "51ad8ca9e973a338",
+        "reportUrl" : "https://iiistvan.github.io/conduit/39//#testresult/51ad8ca9e973a338",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627418589709,
+          "stop" : 1627418712206,
+          "duration" : 122497
+        }
+      }, {
+        "uid" : "8a60ea720a82b14f",
+        "reportUrl" : "https://iiistvan.github.io/conduit/38//#testresult/8a60ea720a82b14f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627407943156,
+          "stop" : 1627408065377,
+          "duration" : 122221
+        }
+      }, {
+        "uid" : "aa903e2b458a34b1",
+        "reportUrl" : "https://iiistvan.github.io/conduit/37//#testresult/aa903e2b458a34b1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627407195886,
+          "stop" : 1627407318915,
+          "duration" : 123029
+        }
+      }, {
+        "uid" : "6a6ecb3df3649be1",
+        "reportUrl" : "https://iiistvan.github.io/conduit/36//#testresult/6a6ecb3df3649be1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627406611953,
+          "stop" : 1627406735701,
+          "duration" : 123748
+        }
+      }, {
+        "uid" : "6e27fce05a308324",
+        "reportUrl" : "https://iiistvan.github.io/conduit/35//#testresult/6e27fce05a308324",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627406060632,
+          "stop" : 1627406183861,
+          "duration" : 123229
+        }
+      }, {
+        "uid" : "6688f641e315d25d",
+        "reportUrl" : "https://iiistvan.github.io/conduit/34//#testresult/6688f641e315d25d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627405601446,
+          "stop" : 1627405724783,
+          "duration" : 123337
+        }
+      }, {
+        "uid" : "ae4fd690c4ecd5e6",
+        "reportUrl" : "https://iiistvan.github.io/conduit/33//#testresult/ae4fd690c4ecd5e6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627391007202,
+          "stop" : 1627391069026,
+          "duration" : 61824
+        }
+      }, {
+        "uid" : "1fd818e97f405bbc",
+        "reportUrl" : "https://iiistvan.github.io/conduit/32//#testresult/1fd818e97f405bbc",
+        "status" : "broken",
+        "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'c:\\\\T360\\\\PycharmProjects\\\\selenium-py-peldatar\\\\selenium2-homework\\\\ManyDataInput.csv'",
+        "time" : {
+          "start" : 1627390220597,
+          "stop" : 1627390227402,
+          "duration" : 6805
+        }
+      }, {
+        "uid" : "3ea88cab9e116775",
+        "reportUrl" : "https://iiistvan.github.io/conduit/31//#testresult/3ea88cab9e116775",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href=\"#/login\"]\"}\n  (Session info: headless chrome=91.0.4472.164)",
+        "time" : {
+          "start" : 1627389946377,
+          "stop" : 1627389947861,
+          "duration" : 1484
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ae2225df86fc6b32.json",
+  "parameterValues" : [ ]
+}

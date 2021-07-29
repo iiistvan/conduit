@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "TypeError: 'WebElement' object is not subscriptable",
+      "children" : [ {
+        "name" : "test_CON_TC25_DataBackup",
+        "uid" : "430aa41c207265bd",
+        "parentUid" : "165a0cf0a3df19a7389bee2559bb52aa",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627590903629,
+          "stop" : 1627590910578,
+          "duration" : 6949
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "165a0cf0a3df19a7389bee2559bb52aa"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
