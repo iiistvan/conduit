@@ -1,0 +1,111 @@
+[ {
+  "uid" : "71387ffe1f9ab553",
+  "name" : "test_CON_TC23_Pages",
+  "time" : {
+    "start" : 1627593718280,
+    "stop" : 1627593729007,
+    "duration" : 10727
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "310322f87d24b0c5",
+  "name" : "test_CON_TC05_NewPost",
+  "time" : {
+    "start" : 1627593659832,
+    "stop" : 1627593686058,
+    "duration" : 26226
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2c9f8f7e2912024a",
+  "name" : "test_CON_TC24_DataList",
+  "time" : {
+    "start" : 1627593729010,
+    "stop" : 1627593739881,
+    "duration" : 10871
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b4fb848b80ece7d4",
+  "name" : "test_CON_TC01_Reg",
+  "time" : {
+    "start" : 1627593604147,
+    "stop" : 1627593632153,
+    "duration" : 28006
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "da42ef4c7b3c0342",
+  "name" : "test_CON_TC26_DataList",
+  "time" : {
+    "start" : 1627593750914,
+    "stop" : 1627593773916,
+    "duration" : 23002
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7adbed803807583e",
+  "name" : "test_CON_TC22_Cookie",
+  "time" : {
+    "start" : 1627593686061,
+    "stop" : 1627593718277,
+    "duration" : 32216
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1d786c4004f98ec4",
+  "name" : "test_CON_TC28_ManyArticle",
+  "time" : {
+    "start" : 1627593827906,
+    "stop" : 1627593950393,
+    "duration" : 122487
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4a5f9fbdae09b54c",
+  "name" : "test_CON_TC02_Login",
+  "time" : {
+    "start" : 1627593632156,
+    "stop" : 1627593648982,
+    "duration" : 16826
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c4d100120324cee3",
+  "name" : "test_CON_TC25_DataBackup",
+  "time" : {
+    "start" : 1627593739884,
+    "stop" : 1627593750912,
+    "duration" : 11028
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e5294d595ebd7742",
+  "name" : "test_CON_TC03_Logout",
+  "time" : {
+    "start" : 1627593648985,
+    "stop" : 1627593659830,
+    "duration" : 10845
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8d081e4d80bf693f",
+  "name" : "test_CON_TC27_DataDelete",
+  "time" : {
+    "start" : 1627593773918,
+    "stop" : 1627593827903,
+    "duration" : 53985
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
