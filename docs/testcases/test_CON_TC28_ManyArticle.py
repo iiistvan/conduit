@@ -49,12 +49,12 @@ def test_CON_TC28_ManyArticle():
     signin_btn.click()
     ts()
 
-    # Step1: New Article felirat
+    # Step1: new Article felirat
     newArt_head = driver.find_element_by_xpath('//*[@id="app"]//li[2]/a')
     newArt_head.click()
     ts()
 
-    # Step2: Post feltöltése adatokkal csv-ből
+    # Step2: post feltöltése adatokkal csv-ből
     publish_btn = driver.find_element_by_xpath('//form/button')
     with open('ManyDataInput.csv', "r", encoding='utf-8') as csvfile:
         csvreader = csv.reader(csvfile, delimiter=',')
