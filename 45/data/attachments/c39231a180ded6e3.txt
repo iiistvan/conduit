@@ -1,0 +1,6 @@
+1.oldal bejegyzéseinek száma 12
+2.oldal bejegyzéseinek száma 2
+CikkCim   CikkCim
+http://localhost:1667/#/articles/cikkcim    http://localhost:1667/#/articles/cikkcim
+Azonos tétel több oldalon!
+Eltérő tételmennyiség az oldalakon!
