@@ -1,5 +1,4 @@
 # CON_TC02_Logout: Kijelentkezés
-# manuális teszt alapján történő lépésekkel
 
 # a szükséges csomagok, modulok betöltése
 from selenium import webdriver
@@ -18,7 +17,7 @@ def test_CON_TC03_Logout():
     def ts():
         time.sleep(3)
 
-    # Step0: Előfeltétel, tesztadatok, belépés létező felhasználóval
+    # Step0: előfeltétel, tesztadatok, belépés létező felhasználóval
     testdata = ['testuser1', 'testuser1@example.com', 'Abcd123$']
 
     signin_head = driver.find_element_by_xpath('//a[@href="#/login"]')
@@ -31,22 +30,19 @@ def test_CON_TC03_Logout():
     signin_btn.click()
     ts()
 
-    # Step1: Felhasználó bejelentkezve
+    # Step1: felhasználó bejelentkezve, fióknév megjelenik
     assert driver.find_element_by_xpath('//*[@id="app"]//li[4]/a').text == testdata[0]
-    # print('Felhasználó bejelentkezve, fióknév megjelenik!')
 
     # Step2: elérhető a Logout felirat
     logout_head = driver.find_element_by_xpath('//*[@id="app"]//li[5]/a')
     assert logout_head.text in ' Log out'
 
-    # Step3: Kilépési művelet
+    # Step3: kilépési művelet
     logout_head.click()
 
-    # Step4: elérhető a Sign In felirat
+    # Step4: kilépés után újra elérhető a Sign In felirat, nem elérhető a Your feed
     assert driver.find_element_by_xpath('//a[@href="#/login"]').text == 'Sign in'
-    # print('Kilépés után újra elérhető a Sign In felirat.')
     assert driver.find_element_by_xpath('//div[@class="feed-toggle"]//a').text != 'Your Feed'
-    # print('Nem elérhető a Your feed.')
 
     # ablak lezárása, memória felszabadítása
     driver.close()

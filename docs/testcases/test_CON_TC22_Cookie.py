@@ -18,7 +18,7 @@ def test_CON_TC22_Cookie():
     def ts():
         time.sleep(3)
 
-    # belépés
+    # belépési függvény
     def login(teszadat):
         signin_head = driver.find_element_by_xpath('//a[@href="#/login"]')
         signin_head.click()
@@ -30,24 +30,21 @@ def test_CON_TC22_Cookie():
         signin_btn.click()
         ts()
 
-    # Cookie panel ellenőrzése
-    def cookie_panel_check():
-        try:
-            assert driver.find_element_by_id('cookie-policy-panel').is_displayed()
-        except:
-            print('Nincs Cookie panel.')
+    # cookie panel ellenőrzése függvény
+    def cookie_panel_check(element_count):
+        assert len(driver.find_elements_by_id('cookie-policy-panel')) == int(element_count)
 
-    # Step0: Előfeltétel, tesztadatok, belépés létező felhasználóval
+    # Step0: előfeltétel, tesztadatok, belépés létező felhasználóval
     testdata = ['testuser1', 'testuser1@example.com', 'Abcd123$']
 
     login(testdata)
 
-    # Step1: Lapozás az oldal aljára
+    # Step1: lapozás az oldal aljára
     driver.find_element_by_tag_name('html').send_keys(Keys.END)
     # js = "window.scrollTo(0, document.body.scrollHeight);"
     # driver.execute_script(js)
 
-    # Step2: Adatvédelmi nyilatkozat elolvasása
+    # Step2: adatvédelmi nyilatkozat elolvasása
     main_window = driver.window_handles[0]
     ts()
     driver.find_element_by_xpath('//div[@id="cookie-policy-panel"]//a').click()
@@ -57,19 +54,18 @@ def test_CON_TC22_Cookie():
     assert len(driver.window_handles) == 2
     driver.close()
     ts()
-    # print(len(driver.window_handles))
     assert len(driver.window_handles) == 1
     driver.switch_to.window(main_window)
-    cookie_panel_check()
+    cookie_panel_check(1)
 
-    # Step3a: Adatvédelmi nyilatkozat elfogadása, frissítés, cookie panel ellenőrzése
+    # Step3: adatvédelmi nyilatkozat elfogadása, frissítés, cookie panel ellenőrzése
     driver.find_element_by_xpath('//div[@id="cookie-policy-panel"]//button[2]').click()
     ts()
     driver.refresh()
     ts()
-    driver.find_element_by_tag_name('html').send_keys(Keys.END)
-    ts()
-    cookie_panel_check()
+    # driver.find_element_by_tag_name('html').send_keys(Keys.END)
+    # ts()
+    cookie_panel_check(0)
     ts()
 
     # Step3b: Adatvédelmi nyilatkozat elutasítása

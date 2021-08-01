@@ -17,8 +17,8 @@ def test_CON_TC23_Pages():
     def ts():
         time.sleep(3)
 
-    # Step0: Előfeltétel, tesztadatok, belépés létező felhasználóval
-    testdata = ['tesztalany1', 'tesztalany1@ta.hu', 'Conduit003']
+    # Step0: előfeltétel, tesztadatok, belépés létező felhasználóval
+    testdata = ['testuser1', 'testuser1@example.com', 'Abcd123$']
 
     signin_head = driver.find_element_by_xpath('//a[@href="#/login"]')
     signin_head.click()
@@ -30,11 +30,11 @@ def test_CON_TC23_Pages():
     signin_btn.click()
     ts()
 
-    # Step1: Oldalszám elemek kigyűjtése
+    # Step1: oldalszám elemek kigyűjtése
     pages = driver.find_elements_by_class_name('page-link')
     art_per_pages = []
 
-    # Step2: Oldalon belüli bejegyzések ellenőrzése
+    # Step2: oldalon belüli bejegyzések ellenőrzése
     #       (az utolsó oldal utolsó eleme egyezik-e az első oldal utolsó elemével,
     #       több oldalnál az oldalak elemszámai egyeznek-e az utolsó kivételével)
 

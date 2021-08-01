@@ -44,7 +44,7 @@ def test_CON_TC27_DataDelete():
         del_art_btn.click()
         ts()
 
-    # Step0: Előfeltétel, belépés beépített tesztadattal
+    # Step0: előfeltétel, belépés beépített tesztadattal
     testdata = ['testuser2', 'testuser2@example.com', 'Abcd123$']
     new_article = ['TorlendoCim', 'Tema', 'Tag']
     new_art_szoveg = ['07272 Ez egy új bejegyzés a vizsgamunkába, ezt fogom törölni később.']

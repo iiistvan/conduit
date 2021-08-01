@@ -1,6 +1,5 @@
 # CON_TC01_Reg: Regisztráció
-# generált jelszóval
-# manuális teszt alapján történő lépésekkel
+# vélelen generált felhasználóval és email címmel
 
 # a szükséges csomagok, modulok betöltése
 from selenium import webdriver
@@ -23,7 +22,6 @@ def test_CON_TC01_Reg():
 
     # véletlen string generálás
     def get_random_string(length):
-        # choose from all lowercase letter
         letters = string.ascii_lowercase
         result_str = ''.join(random.choice(letters) for i in range(length))
         return result_str
@@ -33,20 +31,18 @@ def test_CON_TC01_Reg():
     testdata = [uname, (uname + '@example.com'), 'Conduit003']
     signup_head = driver.find_element_by_xpath('//a[@href="#/register"]')  # a régi: '//*[@id="app"]//li[3]/a'
 
-    # Step1: Homepage megjelenik
+    # Step1: homepage megjelenik
     assert driver.find_element_by_tag_name('h1').text == 'conduit'
     assert driver.find_element_by_xpath('//*[@class="banner"]//p').get_attribute(
         'innerHTML') == 'A place to share your knowledge.'
-    # print('A vizsgált oldal megjelent.')
 
     # Step2: elérhető a Sigp Up felirat
     assert driver.find_element_by_xpath('//*[@id="app"]//li[3]').text == 'Sign up'
-    # print('Elérhető a Sign Up felirat.')
 
     # Step3: megjelenik a regisztrációs felület
     signup_head.click()
+    ts()
     assert driver.find_element_by_tag_name('h1').text == 'Sign up'
-    # print('A regisztrációs felület megjelenik.')
 
     # Step4: látható a username, email, password mező
     ph = ['Username', 'Email', 'Password']
@@ -55,7 +51,7 @@ def test_CON_TC01_Reg():
         assert i.get_attribute('placeholder') == ph[e]
         print(f"A(z) {ph[e]} beviteli mező megjelenik.")
 
-    # Step5: a tesztadat a regisztráció megtörténik
+    # Step5: a tesztadat regisztráció megtörténik
     signup_btn = driver.find_element_by_xpath('//form/button')
     text_uj = 'Your registration was successful!'
     for e, i in enumerate(input_items):
@@ -64,11 +60,11 @@ def test_CON_TC01_Reg():
     signup_btn.click()
     ts()
     assert driver.find_element_by_xpath('//div[@class="swal-text"]').text == text_uj
-    # print('Sikeres regisztráció!')
+
+    # Step6: felhasználó bejelentkezve, fióknév megjelenik
     driver.find_element_by_xpath('//div[@class="swal-button-container"]//button').click()
     ts()
     assert driver.find_element_by_xpath('//*[@id="app"]//li[4]/a').text == testdata[0]
-    # print('Felhasználó bejelentkezve, fióknév megjelenik!')
 
     # ablak lezárása, memória felszabadítása
     driver.close()

@@ -18,7 +18,7 @@ def test_CON_TC25_DataBackup():
     def ts():
         time.sleep(3)
 
-    # Step0: Előfeltétel, tesztadatok, belépés létező felhasználóval
+    # Step0: előfeltétel, tesztadatok, belépés létező felhasználóval
     testdata = ['testuser1', 'testuser1@example.com', 'Abcd123$']
 
     signin_head = driver.find_element_by_xpath('//a[@href="#/login"]')
@@ -31,7 +31,7 @@ def test_CON_TC25_DataBackup():
     signin_btn.click()
     ts()
 
-    # Step1: Popular tags kigyűjtése, fájlba kiíratás
+    # Step1: popular tags kigyűjtése, fájlba kiíratás
     pop_tags = driver.find_elements_by_xpath('//div[@class="sidebar"]/div/a')
     with open('./docs/testcases/PopTagsExport.csv', "w", encoding='utf-8') as csvfile:
         # with open('c:\\T360\\PycharmProjects\\selenium-py-peldatar\\selenium2-homework\\PopTagsExport.csv', "w",
@@ -42,7 +42,7 @@ def test_CON_TC25_DataBackup():
             # print(f'{pt.text},{pt.get_attribute("href")}')
     ts()
 
-    # Step2: Popular tags kigyűjtése, fájlból olvasás ellenőrzés
+    # Step2: popular tags kigyűjtése, fájlból olvasás ellenőrzés
     with open('./docs/testcases/PopTagsExport.csv', "r", encoding='utf-8') as csvfile2:
         csvreader = csv.reader(csvfile2, delimiter=',')
         next(csvreader)

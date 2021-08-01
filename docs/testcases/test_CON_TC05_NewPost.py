@@ -1,5 +1,4 @@
 # CON_TC05_NewPost: Új adat bevitel
-# manuális teszt alapján történő lépésekkel
 
 # a szükséges csomagok, modulok betöltése
 from selenium import webdriver
@@ -18,8 +17,8 @@ def test_CON_TC05_NewPost():
     def ts():
         time.sleep(3)
 
-    # Step0: Előfeltétel, tesztadatok, belépés létező felhasználóval
-    testdata = [['testuser1', 'testuser1@example.com', 'Abcd123$'], ['tesztalany2', 'tesztalany2@ta.hu', 'Conduit003']]
+    # Step0: előfeltétel, tesztadatok, belépés létező felhasználóval
+    testdata = [['testuser1', 'testuser1@example.com', 'Abcd123$'], ['testuser2', 'testuser2@example.com', 'Abcd123$']]
     new_article = ['CikkCim', 'Tema', 'Tag']
     new_art_szoveg = ['Ez egy új bejegyzés a vizsgamunkába.']
 
@@ -37,7 +36,7 @@ def test_CON_TC05_NewPost():
     newArt_head = driver.find_element_by_xpath('//*[@id="app"]//li[2]/a')
     assert newArt_head.text in ' New Article'
 
-    # Step2: Cikk mezők ellenőrzése
+    # Step2: post mezők ellenőrzése
     newArt_head.click()
     ts()
     ph_i = ["Article Title", "What's this article about?", "Enter tags"]
@@ -50,7 +49,7 @@ def test_CON_TC05_NewPost():
     assert driver.find_element_by_xpath('//form//textarea').get_attribute('placeholder') == ph_t[0]
     # print(f"A(z) {ph_t[0]} beviteli mező megjelenik.")
 
-    # Step2: Cikk feltöltése adatokkal
+    # Step2: post feltöltése adatokkal
     publish_btn = driver.find_element_by_xpath('//form/button')
     for e, i in enumerate(input_items):
         i.send_keys(new_article[e])
@@ -59,7 +58,7 @@ def test_CON_TC05_NewPost():
     publish_btn.click()
     ts()
 
-    # Step3: a felületen megjelenik a title, a szerző, tag,  Edit és Delete gomb,
+    # Step3: a felületen a kitöltésnek megfelelően megjelenik a title, a szerző, tag,  Edit és Delete gomb,
     # valamint egy üres comment ablak és Post Comment gomb
     assert driver.find_element_by_xpath('//div[@class="banner"]//h1').text == new_article[0]
     assert driver.find_element_by_xpath('//div[@class="info"]/a').text == testdata[0][0]

@@ -17,7 +17,7 @@ def test_CON_TC26_DataList():
     def ts():
         time.sleep(3)
 
-    # Step0: Előfeltétel, tesztadatok, belépés létező felhasználóval
+    # Step0: előfeltétel, tesztadatok, belépés létező felhasználóval
     testdata = ['testuser2', 'testuser2@example.com', 'Abcd123$']
     modified_testdata = ['testuser2', 'testuser2@example.com', 'Abcd123$', 'Short bio about testuser2']
 
@@ -31,12 +31,12 @@ def test_CON_TC26_DataList():
     signin_btn.click()
     ts()
 
-    # Step1: Settings felület megnyitása
+    # Step1: settings felület megnyitása
     settings_head = driver.find_element_by_xpath('//a[@href="#/settings"]')
     settings_head.click()
     ts()
 
-    # Step3: Adatok módosítása
+    # Step3: adatok módosítása
     update_btn = driver.find_element_by_xpath('//fieldset/button')
     list_items = driver.find_elements_by_xpath('//fieldset[@class="form-group"]')
     list_settings = []

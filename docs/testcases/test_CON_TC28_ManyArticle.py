@@ -36,8 +36,7 @@ def test_CON_TC28_ManyArticle():
                     return True
         return False
 
-
-    # Step0: Előfeltétel, belépés
+    # Step0: előfeltétel, belépés beépített tesztadattal
     testdata = [['testuser1', 'testuser1@example.com', 'Abcd123$'], ]
 
     signin_head = driver.find_element_by_xpath('//a[@href="#/login"]')
@@ -55,7 +54,7 @@ def test_CON_TC28_ManyArticle():
     newArt_head.click()
     ts()
 
-    # Step2: Cikk feltöltése adatokkal csv-ből
+    # Step2: Post feltöltése adatokkal csv-ből
     publish_btn = driver.find_element_by_xpath('//form/button')
     with open('ManyDataInput.csv', "r", encoding='utf-8') as csvfile:
         csvreader = csv.reader(csvfile, delimiter=',')
