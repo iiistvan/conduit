@@ -1,0 +1,273 @@
+{
+  "uid" : "38083216348c2cdd",
+  "name" : "test_CON_TC02_Login",
+  "fullName" : "docs.testcases.test_CON_TC02_Login#test_CON_TC02_Login",
+  "historyId" : "53230e0b631b3a634c9732e2a881edf6",
+  "time" : {
+    "start" : 1628167980165,
+    "stop" : 1628167996968,
+    "duration" : 16803
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "72c974f8d6e91c0f",
+      "name" : "log",
+      "source" : "72c974f8d6e91c0f.txt",
+      "type" : "text/plain",
+      "size" : 344
+    }, {
+      "uid" : "9b2904af9a594fbd",
+      "name" : "stderr",
+      "source" : "9b2904af9a594fbd.txt",
+      "type" : "text/plain",
+      "size" : 215
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "docs.testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_CON_TC02_Login"
+  }, {
+    "name" : "host",
+    "value" : "fv-az39-10"
+  }, {
+    "name" : "thread",
+    "value" : "3861-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "docs.testcases.test_CON_TC02_Login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 15,
+        "skipped" : 0,
+        "passed" : 14,
+        "unknown" : 0,
+        "total" : 29
+      },
+      "items" : [ {
+        "uid" : "f985546f7ce1d901",
+        "reportUrl" : "https://iiistvan.github.io/conduit/48//#testresult/f985546f7ce1d901",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628166829235,
+          "stop" : 1628166845249,
+          "duration" : 16014
+        }
+      }, {
+        "uid" : "e146fc16787619f2",
+        "reportUrl" : "https://iiistvan.github.io/conduit/47//#testresult/e146fc16787619f2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628155511414,
+          "stop" : 1628155528286,
+          "duration" : 16872
+        }
+      }, {
+        "uid" : "380786feb44bf12f",
+        "reportUrl" : "https://iiistvan.github.io/conduit/46//#testresult/380786feb44bf12f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627812049706,
+          "stop" : 1627812066601,
+          "duration" : 16895
+        }
+      }, {
+        "uid" : "89e068a1587796b3",
+        "reportUrl" : "https://iiistvan.github.io/conduit/45//#testresult/89e068a1587796b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627810637251,
+          "stop" : 1627810653169,
+          "duration" : 15918
+        }
+      }, {
+        "uid" : "4a5f9fbdae09b54c",
+        "reportUrl" : "https://iiistvan.github.io/conduit/44//#testresult/4a5f9fbdae09b54c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627593632156,
+          "stop" : 1627593648982,
+          "duration" : 16826
+        }
+      }, {
+        "uid" : "2c4fcd7da969c6e1",
+        "reportUrl" : "https://iiistvan.github.io/conduit/43//#testresult/2c4fcd7da969c6e1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627592349421,
+          "stop" : 1627592366416,
+          "duration" : 16995
+        }
+      }, {
+        "uid" : "c7fe4c5b1358688b",
+        "reportUrl" : "https://iiistvan.github.io/conduit/41//#testresult/c7fe4c5b1358688b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627590794912,
+          "stop" : 1627590810844,
+          "duration" : 15932
+        }
+      }, {
+        "uid" : "3145055ef61b0ed0",
+        "reportUrl" : "https://iiistvan.github.io/conduit/40//#testresult/3145055ef61b0ed0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627421408784,
+          "stop" : 1627421425982,
+          "duration" : 17198
+        }
+      }, {
+        "uid" : "8472016447db24f3",
+        "reportUrl" : "https://iiistvan.github.io/conduit/39//#testresult/8472016447db24f3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627418421859,
+          "stop" : 1627418438792,
+          "duration" : 16933
+        }
+      }, {
+        "uid" : "a85fe44cb6e48771",
+        "reportUrl" : "https://iiistvan.github.io/conduit/38//#testresult/a85fe44cb6e48771",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627407829858,
+          "stop" : 1627407846667,
+          "duration" : 16809
+        }
+      }, {
+        "uid" : "4e639ca805e4618b",
+        "reportUrl" : "https://iiistvan.github.io/conduit/37//#testresult/4e639ca805e4618b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627407087693,
+          "stop" : 1627407104647,
+          "duration" : 16954
+        }
+      }, {
+        "uid" : "213d60824ef25fdf",
+        "reportUrl" : "https://iiistvan.github.io/conduit/36//#testresult/213d60824ef25fdf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627406503605,
+          "stop" : 1627406520882,
+          "duration" : 17277
+        }
+      }, {
+        "uid" : "627255bbbf7ad9d8",
+        "reportUrl" : "https://iiistvan.github.io/conduit/35//#testresult/627255bbbf7ad9d8",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"h1\"}\n  (Session info: headless chrome=91.0.4472.164)",
+        "time" : {
+          "start" : 1627405969659,
+          "stop" : 1627405971148,
+          "duration" : 1489
+        }
+      }, {
+        "uid" : "f6abf824c39b0c9b",
+        "reportUrl" : "https://iiistvan.github.io/conduit/34//#testresult/f6abf824c39b0c9b",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"h1\"}\n  (Session info: headless chrome=91.0.4472.164)",
+        "time" : {
+          "start" : 1627405573030,
+          "stop" : 1627405574805,
+          "duration" : 1775
+        }
+      }, {
+        "uid" : "96e81ce116775fa3",
+        "reportUrl" : "https://iiistvan.github.io/conduit/33//#testresult/96e81ce116775fa3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627390940064,
+          "stop" : 1627390950400,
+          "duration" : 10336
+        }
+      }, {
+        "uid" : "e83d24011f03f3f5",
+        "reportUrl" : "https://iiistvan.github.io/conduit/32//#testresult/e83d24011f03f3f5",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"h1\"}\n  (Session info: headless chrome=91.0.4472.164)",
+        "time" : {
+          "start" : 1627390186491,
+          "stop" : 1627390190965,
+          "duration" : 4474
+        }
+      }, {
+        "uid" : "3fb8f2815f05cf58",
+        "reportUrl" : "https://iiistvan.github.io/conduit/31//#testresult/3fb8f2815f05cf58",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"h1\"}\n  (Session info: headless chrome=91.0.4472.164)",
+        "time" : {
+          "start" : 1627389932148,
+          "stop" : 1627389936651,
+          "duration" : 4503
+        }
+      }, {
+        "uid" : "5cb863f7a025f0da",
+        "reportUrl" : "https://iiistvan.github.io/conduit/30//#testresult/5cb863f7a025f0da",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"h1\"}\n  (Session info: headless chrome=91.0.4472.164)",
+        "time" : {
+          "start" : 1627279381919,
+          "stop" : 1627279386487,
+          "duration" : 4568
+        }
+      }, {
+        "uid" : "a8b5bb6fd4aabea7",
+        "reportUrl" : "https://iiistvan.github.io/conduit/28//#testresult/a8b5bb6fd4aabea7",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]//li[4]/a\"}\n  (Session info: headless chrome=91.0.4472.164)",
+        "time" : {
+          "start" : 1627246222962,
+          "stop" : 1627246230865,
+          "duration" : 7903
+        }
+      }, {
+        "uid" : "fa23f3e1a8b0242b",
+        "reportUrl" : "https://iiistvan.github.io/conduit/27//#testresult/fa23f3e1a8b0242b",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]//li[4]/a\"}\n  (Session info: headless chrome=91.0.4472.164)",
+        "time" : {
+          "start" : 1627245631496,
+          "stop" : 1627245639672,
+          "duration" : 8176
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "38083216348c2cdd.json",
+  "parameterValues" : [ ]
+}
