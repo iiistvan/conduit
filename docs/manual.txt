@@ -1,0 +1,24 @@
+Lokális futtatáshoz, fejlesztéshez javasolt telepítések:
+-------------------------------------------------------
+alkalmazás kontenerizációhoz:
+				https://www.docker.com/products/docker-desktop
+programozáshoz: 		https://www.python.org/
+				https://www.jetbrains.com/pycharm/
+webdriver:			https://pypi.org/project/webdriver-manager/
+teszt keretrendszer:		https://selenium-python.readthedocs.io/getting-started.html 
+				https://docs.pytest.org/en/6.2.x/getting-started.html
+verzókövetés, forráskód megosztás - git, GitHub:
+				https://github.com/
+CI automatizálási, riport környezet - GitHub Actions, allure:
+				https://github.com/allure-framework
+
+A belépéshez az alábbi előre generált felhasználói account-ok használhatóak:
+testuser1@example.com / Abcd123$
+testuser2@example.com / Abcd123$
+testuser3@example.com / Abcd123$
+testuser4@example.com / Abcd123$
+testuser5@example.com / Abcd123$				
+						
+
+Az automatizált futtatáshoz telepítendő fontos összetevőket az alkalmazás oldalán található gyökérkönyvtárban levő requirements.txt tartalmazza
+A másik fontos összetevő, ami a virtuális gép, docker alkalmazások, modulok, időzítések, tesztek, riportok konfigurációját tartalmazza, elindítja és vezérli, az alkalmazás könyvtára alatti .github/workflows/conduitapp.yml
