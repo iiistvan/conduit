@@ -1,0 +1,275 @@
+{
+  "uid" : "e3c1c3978998085b",
+  "name" : "test_CON_TC23_Pages",
+  "fullName" : "docs.testcases.test_CON_TC23_Pages#test_CON_TC23_Pages",
+  "historyId" : "1818268b119944b7fb105f8d853e53da",
+  "time" : {
+    "start" : 1628166909590,
+    "stop" : 1628166930780,
+    "duration" : 21190
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e4a9f5cf128fcc1c",
+      "name" : "log",
+      "source" : "e4a9f5cf128fcc1c.txt",
+      "type" : "text/plain",
+      "size" : 344
+    }, {
+      "uid" : "2374da7905f31bb7",
+      "name" : "stdout",
+      "source" : "2374da7905f31bb7.txt",
+      "type" : "text/plain",
+      "size" : 239
+    }, {
+      "uid" : "a50462f39be10a72",
+      "name" : "stderr",
+      "source" : "a50462f39be10a72.txt",
+      "type" : "text/plain",
+      "size" : 215
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "docs.testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_CON_TC23_Pages"
+  }, {
+    "name" : "host",
+    "value" : "fv-az82-623"
+  }, {
+    "name" : "thread",
+    "value" : "3701-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "docs.testcases.test_CON_TC23_Pages"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 5,
+        "skipped" : 0,
+        "passed" : 23,
+        "unknown" : 0,
+        "total" : 28
+      },
+      "items" : [ {
+        "uid" : "d53771118add227a",
+        "reportUrl" : "https://iiistvan.github.io/conduit/47//#testresult/d53771118add227a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628155595189,
+          "stop" : 1628155615088,
+          "duration" : 19899
+        }
+      }, {
+        "uid" : "215291bf979eedb",
+        "reportUrl" : "https://iiistvan.github.io/conduit/46//#testresult/215291bf979eedb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627812131267,
+          "stop" : 1627812151256,
+          "duration" : 19989
+        }
+      }, {
+        "uid" : "1bfa53650de9cfac",
+        "reportUrl" : "https://iiistvan.github.io/conduit/45//#testresult/1bfa53650de9cfac",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627810718142,
+          "stop" : 1627810738163,
+          "duration" : 20021
+        }
+      }, {
+        "uid" : "71387ffe1f9ab553",
+        "reportUrl" : "https://iiistvan.github.io/conduit/44//#testresult/71387ffe1f9ab553",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627593718280,
+          "stop" : 1627593729007,
+          "duration" : 10727
+        }
+      }, {
+        "uid" : "590d903f4e62fe3c",
+        "reportUrl" : "https://iiistvan.github.io/conduit/43//#testresult/590d903f4e62fe3c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627592434540,
+          "stop" : 1627592445417,
+          "duration" : 10877
+        }
+      }, {
+        "uid" : "5c50fbc0e8d6b1d7",
+        "reportUrl" : "https://iiistvan.github.io/conduit/41//#testresult/5c50fbc0e8d6b1d7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627590881826,
+          "stop" : 1627590892687,
+          "duration" : 10861
+        }
+      }, {
+        "uid" : "fd728ba087bad461",
+        "reportUrl" : "https://iiistvan.github.io/conduit/40//#testresult/fd728ba087bad461",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627421481544,
+          "stop" : 1627421492570,
+          "duration" : 11026
+        }
+      }, {
+        "uid" : "1f4cb39da223620e",
+        "reportUrl" : "https://iiistvan.github.io/conduit/39//#testresult/1f4cb39da223620e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627418492962,
+          "stop" : 1627418502711,
+          "duration" : 9749
+        }
+      }, {
+        "uid" : "59a6ad86895c95e7",
+        "reportUrl" : "https://iiistvan.github.io/conduit/38//#testresult/59a6ad86895c95e7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627407898657,
+          "stop" : 1627407909390,
+          "duration" : 10733
+        }
+      }, {
+        "uid" : "811e9b9826f8ac68",
+        "reportUrl" : "https://iiistvan.github.io/conduit/37//#testresult/811e9b9826f8ac68",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627407157018,
+          "stop" : 1627407167869,
+          "duration" : 10851
+        }
+      }, {
+        "uid" : "c54c522bfe80d2ce",
+        "reportUrl" : "https://iiistvan.github.io/conduit/36//#testresult/c54c522bfe80d2ce",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627406572189,
+          "stop" : 1627406583014,
+          "duration" : 10825
+        }
+      }, {
+        "uid" : "5cae7c572e758d49",
+        "reportUrl" : "https://iiistvan.github.io/conduit/35//#testresult/5cae7c572e758d49",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627406022687,
+          "stop" : 1627406033552,
+          "duration" : 10865
+        }
+      }, {
+        "uid" : "b8a378d7a300d89a",
+        "reportUrl" : "https://iiistvan.github.io/conduit/34//#testresult/b8a378d7a300d89a",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href=\"#/login\"]\"}\n  (Session info: headless chrome=91.0.4472.164)",
+        "time" : {
+          "start" : 1627405580254,
+          "stop" : 1627405582128,
+          "duration" : 1874
+        }
+      }, {
+        "uid" : "e2b6892c095fb829",
+        "reportUrl" : "https://iiistvan.github.io/conduit/33//#testresult/e2b6892c095fb829",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627390977189,
+          "stop" : 1627390983046,
+          "duration" : 5857
+        }
+      }, {
+        "uid" : "aa23de72d52a4d7",
+        "reportUrl" : "https://iiistvan.github.io/conduit/32//#testresult/aa23de72d52a4d7",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href=\"#/login\"]\"}\n  (Session info: headless chrome=91.0.4472.164)",
+        "time" : {
+          "start" : 1627390195588,
+          "stop" : 1627390197057,
+          "duration" : 1469
+        }
+      }, {
+        "uid" : "246a6ddeb8f56252",
+        "reportUrl" : "https://iiistvan.github.io/conduit/31//#testresult/246a6ddeb8f56252",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href=\"#/login\"]\"}\n  (Session info: headless chrome=91.0.4472.164)",
+        "time" : {
+          "start" : 1627389941425,
+          "stop" : 1627389942920,
+          "duration" : 1495
+        }
+      }, {
+        "uid" : "d6bf2aba28218fa9",
+        "reportUrl" : "https://iiistvan.github.io/conduit/30//#testresult/d6bf2aba28218fa9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627279413361,
+          "stop" : 1627279419260,
+          "duration" : 5899
+        }
+      }, {
+        "uid" : "b6996bb9361519b5",
+        "reportUrl" : "https://iiistvan.github.io/conduit/28//#testresult/b6996bb9361519b5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627246255992,
+          "stop" : 1627246262783,
+          "duration" : 6791
+        }
+      }, {
+        "uid" : "a14b9bfce35d7668",
+        "reportUrl" : "https://iiistvan.github.io/conduit/27//#testresult/a14b9bfce35d7668",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627245666465,
+          "stop" : 1627245672422,
+          "duration" : 5957
+        }
+      }, {
+        "uid" : "2ee715fc23a5a7a3",
+        "reportUrl" : "https://iiistvan.github.io/conduit/26//#testresult/2ee715fc23a5a7a3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627239881205,
+          "stop" : 1627239887091,
+          "duration" : 5886
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e3c1c3978998085b.json",
+  "parameterValues" : [ ]
+}
