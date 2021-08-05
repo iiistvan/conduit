@@ -1,0 +1,111 @@
+[ {
+  "uid" : "52e31313787e9742",
+  "name" : "test_CON_TC26_DataList",
+  "time" : {
+    "start" : 1628155634991,
+    "stop" : 1628155658006,
+    "duration" : 23015
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7e5154ed97dc31cf",
+  "name" : "test_CON_TC24_DataList",
+  "time" : {
+    "start" : 1628155615090,
+    "stop" : 1628155624901,
+    "duration" : 9811
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d53771118add227a",
+  "name" : "test_CON_TC23_Pages",
+  "time" : {
+    "start" : 1628155595189,
+    "stop" : 1628155615088,
+    "duration" : 19899
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d56709ba43411ebc",
+  "name" : "test_CON_TC05_NewPost",
+  "time" : {
+    "start" : 1628155539170,
+    "stop" : 1628155565806,
+    "duration" : 26636
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e79ed927e96e3f7e",
+  "name" : "test_CON_TC01_Reg",
+  "time" : {
+    "start" : 1628155470383,
+    "stop" : 1628155511411,
+    "duration" : 41028
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "40b01776da8a74dd",
+  "name" : "test_CON_TC22_Cookie",
+  "time" : {
+    "start" : 1628155565809,
+    "stop" : 1628155595186,
+    "duration" : 29377
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e146fc16787619f2",
+  "name" : "test_CON_TC02_Login",
+  "time" : {
+    "start" : 1628155511414,
+    "stop" : 1628155528286,
+    "duration" : 16872
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b4a157d11f9306d8",
+  "name" : "test_CON_TC25_DataBackup",
+  "time" : {
+    "start" : 1628155624904,
+    "stop" : 1628155634989,
+    "duration" : 10085
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6ee4fc46adbf0a82",
+  "name" : "test_CON_TC03_Logout",
+  "time" : {
+    "start" : 1628155528289,
+    "stop" : 1628155539167,
+    "duration" : 10878
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5dfc8f55892a35fc",
+  "name" : "test_CON_TC28_ManyArticle",
+  "time" : {
+    "start" : 1628155712043,
+    "stop" : 1628155834429,
+    "duration" : 122386
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6af472c5dcf07cc4",
+  "name" : "test_CON_TC27_DataDelete",
+  "time" : {
+    "start" : 1628155658010,
+    "stop" : 1628155712040,
+    "duration" : 54030
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
